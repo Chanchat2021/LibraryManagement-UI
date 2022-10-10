@@ -1,0 +1,29 @@
+  .book-container {
+    margin-right: 1vw;
+    margin-top: 1.5vw;
+    margin-bottom: 60px;
+    background-image: url(../../../assets/hpgwarts.jpg);
+    height: 100%;
+    width: 99.5%;
+  }
+  .card-container {
+    width: 19vw;
+    padding-top: 10vh;
+    padding-bottom: 1vh;
+    /* padding-right: 1vh; */
+  }
+  .header{
+    background-color:azure;
+  }
+  .display{
+    display: contents;
+  }
+  .container1{
+    height: 150vh;
+    width:100vw;
+  }
+  .search{
+    margin-top: 30px;
+  }
+  
+  

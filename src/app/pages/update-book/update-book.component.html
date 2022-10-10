@@ -1,0 +1,147 @@
+<body>
+  <div class="row d-flex justify-content-center align-items-center h-100">
+    <div class="col-12 col-md-8 col-lg-6 col-xl-5" style="margin: 5vh">
+      <div class="card bg-dark text-white" style="border-radius: 1rem">
+        <div class="card-body p-5 text-center">
+          <form
+            [formGroup]="updateBook"
+            (ngSubmit)="submit()"
+            style="margin-top: -5vh"
+          >
+            <div class="mb-md-5 mt-md-4 pb-5">
+              <h2
+                class="fw-bold mb-2 text-uppercase signUpText header"
+                style="color: aliceblue"
+              >
+             Update Book
+              </h2>
+              <div class="form-outline form-white mb-4">
+                <label class="form-label" for="title">Title*</label>
+                <input
+                  type="text"
+                  id="typeTitleX"
+                  class="form-control form-control-lg"
+                  formControlName="title"
+                />
+                <p
+                  *ngIf="
+                  updateBook.controls.title.errors &&
+                  updateBook.controls.title.touched;
+                    else noTitleError
+                  "
+                  style="color: red"
+                >
+                  Title is required
+                </p>
+                <ng-template #noTitleError>
+                  <p></p>
+                </ng-template>
+              </div>
+
+              <div class="form-outline form-white mb-4">
+                <label class="form-label" for="author">Author</label>
+                <input
+                  type="text"
+                  id="typeAuthorX"
+                  class="form-control form-control-lg"
+                  formControlName="author"
+                />
+                <p
+                  *ngIf="
+                  updateBook.controls.author.errors &&
+                  updateBook.controls.author.touched;
+                    else noAuthorError
+                  "
+                  style="color: red"
+                >
+                  Author is required
+                </p>
+                <ng-template #noAuthorError>
+                  <p></p>
+                </ng-template>
+              </div>
+
+              <div class="form-outline form-white mb-4">
+                <label class="form-label" for="publisher">Publisher</label>
+                <input
+                  type="text"
+                  id="typePublisherX"
+                  class="form-control form-control-lg"
+                  formControlName="publisher"
+                />
+                <p
+                  *ngIf="
+                  updateBook.controls.publisher.errors &&
+                  updateBook.controls.publisher.touched;
+                    else noPublisherError
+                  "
+                  style="color: red"
+                >
+                Publisher is required
+                </p>
+                <ng-template #noPublisherError>
+                  <p></p>
+                </ng-template>
+              </div>
+
+              <div class="form-outline form-white mb-4">
+                <label class="form-label" for="abstract">Abstract</label>
+                <input
+                  type="text"
+                  id="typAbstractX"
+                  class="form-control form-control-lg"
+                  formControlName="abstract"
+                />
+                <p
+                  *ngIf="
+                  updateBook.controls.abstract.errors &&
+                  updateBook.controls.abstract.touched;
+                    else noAbstractError
+                  "
+                  style="color: red"
+                >
+                Abstract is required
+                </p>
+                <ng-template #noAbstractError>
+                  <p></p>
+                </ng-template>
+              </div>
+
+              <div class="form-outline form-white mb-4">
+                <label class="form-label" for="genre">Genre</label>
+                <input
+                  type="text"
+                  id="typGenreX"
+                  class="form-control form-control-lg"
+                  formControlName="genre"
+                />
+                <p
+                  *ngIf="
+                  updateBook.controls.genre.errors &&
+                  updateBook.controls.genre.touched;
+                    else noGenreError
+                  "
+                  style="color: red"
+                >
+                Genre is required
+                </p>
+                <ng-template #noGenreError>
+                  <p></p>
+                </ng-template>
+              </div>
+              </div>
+
+              <button
+                type="submit"
+                class="btn btn-outline-light btn-lg px-5"
+                [disabled]="!updateBook.valid"
+              >
+                Update
+              </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+

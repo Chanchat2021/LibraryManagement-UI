@@ -1,0 +1,12 @@
+.gradient-custom {
+    background: #8646c7;
+    background: -webkit-linear-gradient(to right, rgb(98, 30, 165), rgb(192, 198, 208));
+    background: linear-gradient(to right, rgb(157, 95, 233), rgb(186, 193, 205));
+    background-image: url(../../../assets/hpgwarts.jpg);
+    }
+    .text{
+        margin-top: -20%;
+    }
+    .signUpText{
+        margin-top: -10%;
+    }

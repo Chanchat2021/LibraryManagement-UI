@@ -1,0 +1,16 @@
+<app-header></app-header>
+<body>
+  <div>
+    <div class="d-flex row container1">
+      <div class="book-container">
+        <div class="row">
+          <div class="card-container display">
+            <div *ngFor="let response of receivedData" class="card-container">
+              <app-book [response]="response"></app-book>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>

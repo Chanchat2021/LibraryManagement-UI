@@ -1,0 +1,72 @@
+.bookName {
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: -2px;
+    text-align: center;
+  }
+  .description {
+    font-size: 12px;
+    margin-left: 25px;
+    margin-top: -2px;
+  }
+  .card {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    width: auto;
+    height: 370px;
+    overflow: clip;
+    margin: 5px;
+    margin-left: 40px;
+  }
+  .card-body {
+    position: relative;
+    margin-top: 10px;
+  }
+  .img {
+    height: 10rem;
+    width: 100%;
+    border-radius: 5px;
+  }
+  .button{
+    width: 25%;
+    height: 40px;
+    color: white;
+    background-color:cornflowerblue;
+    border: none;
+    border-radius: 8px;
+    margin-left: 150px;
+    position: absolute;
+    margin-bottom: 30px;
+    margin-top: 1px;
+  }
+  .author{
+    text-align: center;
+    font-size: 15px;
+  }
+  .editButton{
+    width: 25%;
+    height: 40px;
+    color: white;
+    background-color:cornflowerblue;
+    border: none;
+    margin-left: 80px;
+    border-radius: 8px;
+    position:absolute;
+    margin-top: -1px;
+  }
+  button:disabled,
+button[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+.delistBtn{
+  width: 25%;
+  height: 40px;
+  color: white;
+  background-color:cornflowerblue;
+  border: none;
+  margin-left: 5px;
+  border-radius: 8px;
+  position:absolute;
+  margin-top: -1px;
+}
